@@ -7,7 +7,7 @@ let currentSubject = 'phy';  // To keep track of the current subject
 
 const inp = document.getElementById("7");
 const ldiv = document.querySelector(".ldiv");
-const rdiv = document.querySelector(".rdiv");
+const divda = document.querySelector(".divda");
 
 ldiv.textContent = "ENTER THE NUMBER OF EXAMS";
 inp.addEventListener("keydown", function(event) {
@@ -70,13 +70,13 @@ function pred(lname, subject) {
     let boost;
     switch (subject) {
         case 'phy':
-            boost = Math.floor((5 / 100) * sm); // Physics boost factor
+            boost = Math.floor((5 * 100) / sm); // Physics boost factor
             break;
         case 'mat':
-            boost = Math.floor((6 / 100) * sm); // Maths boost factor
+            boost = Math.floor((6 * 100) / sm); // Maths boost factor
             break;
         case 'chem':
-            boost = Math.floor((7 /100) * sm); // Chemistry boost factor
+            boost = Math.floor((7 * 100) / sm); // Chemistry boost factor
             break;
     }
     let predictedMark = sm + boost;
@@ -84,6 +84,9 @@ function pred(lname, subject) {
 }
 
 function displayResults() {
+    const rdiv = document.createElement("div");
+    rdiv.className = "rdiv";
+    divda.appendChild(rdiv);
     let cl = [];
     cl.push(pred(phy, 'phy'));
     cl.push(pred(chem, 'chem'));
@@ -130,7 +133,7 @@ function displayResults() {
     ];
 
     let layout = {
-        title: 'Marks Progression',
+        title: 'Cutoff Progression',
         xaxis: {title: 'Exams'},
         yaxis: {title: 'Marks'},
         width: 600,
@@ -138,7 +141,7 @@ function displayResults() {
     };
 
     // Clear existing content and render the plot in the 'cutoffChart' div within the ldiv
-    ldiv.innerHTML = '<div id="cutoffChart" style="width: 100%; height: 400px;"></div>';
+    ldiv.innerHTML = '<div id="cutoffChart"></div>';
     Plotly.newPlot('cutoffChart', data, layout, { displayModeBar: false });
 
     // College scores dictionary
