@@ -1,63 +1,71 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 80px;
-    background-color: black;
+.hey {
+    border: 1px inset black;
+    width: 100%;
+    height: auto; /* Adjusted to auto to fit content */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space between input and button */
 }
 
-.vertical-text {
-    color: white;
-    font-size: 20px;
-    font-family: 'Arial', sans-serif; /* You can replace this with any third-party font */
+.divda {
+    display: flex;
+    border: 1px outset black;
+    height: 90%;
+    width: 100%;
+}
+
+.navda {
     text-align: center;
-    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px black;
+    background-color: blueviolet;
+    height: 5%;
+    width: 100%;
 }
 
-.vertical-text p {
-    margin: 0;
-    padding: 0;
-    letter-spacing: 2px;
-}
-
-.navbar button, .navbar input, .navbar label {
-    margin-bottom: 20px;
-    padding: 10px;
-    color: white;
-    background-color: #333;
-    border: none;
-    cursor: pointer;
-    width: 60px;
+.ldiv {
+    font-size: 30px;
+    font-weight: bold; /* Corrected from 'font: bold;' */
+    text-shadow: 1px 1px black;
     text-align: center;
+    border: 1px inset black;
+    width: 50%;
+    padding: 10px; /* Added padding for spacing */
+    box-sizing: border-box; /* Ensures padding is included in width */
 }
 
-#android-check {
-    cursor: pointer;
+.rdiv {
+    font-size: 24px; /* Slightly smaller font size for a cleaner look */
+    font-weight: 600; /* Semi-bold for emphasis */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border: 1px solid #ccc; /* Light border for a cleaner appearance */
+    width: 50%;
+    padding: 20px; /* Increased padding for better spacing */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    margin: 10px; /* Margin for spacing around the div */
+    overflow: auto; /* Handle overflow content gracefully */
+    line-height: 1.6; /* Increased line height for readability */
 }
 
-.navbar input[type="color"] {
-    width: 60px;
-    height: 40px;
+.foot1 {
+    border: 1px inset black;
+    width: 95%;
 }
 
-#drawing-canvas {
-    position: absolute;
-    left: 80px;
-    top: 0;
-    width: calc(100% - 80px);
+.btn {
+    border-radius: 5px;
     height: 100%;
-    background-color: white;
-    cursor: crosshair;
+    width: auto; /* Adjusted to auto for better fit */
+    padding: 5px 10px; /* Added padding for spacing */
+}
+
+.inputra {
+    border-radius: 10px; /* More rounded corners for a modern look */
+    height: 50px; /* Increased height */
+    width:103.5%;/* Increased width */
+    padding: 10px; /* Increased padding */
+    font-size: 20px; /* Larger text */
+    border: 2px solid #007BFF; /* Add a blue border for a cooler look */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
