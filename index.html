@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Drawing App</title>
+    <title>Mark Prediction Model</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-2.34.0.min.js" charset="utf-8"></script>
 </head>
 <body>
-    <div class="navbar">
-        <div class="vertical-text">
-            <p>S</p>
-            <p>H</p>
-            <p>I</p>
-            <p>V</p>
-            <p>D</p>
-            <p>R</p>
-            <p>A</p>
-            <p>W</p>
-        </div>
-        <label for="android-check">Android Mode</label>
-        <input type="checkbox" id="android-check">
-        <button id="eraser">Eraser</button>
-        <input type="color" id="color-picker" value="#000000">
-        <input type="range" id="brush-size" min="1" max="50" value="5">
-        <button id="reset">Reset</button>
+    <div class="navda">
+        <h1>MARK PREDICTION MODEL</h1>
     </div>
-    <canvas id="drawing-canvas"></canvas>
+    <div class="divda">
+        <div class="ldiv">
+            <div id="cutoffChart" style="width: 100%; height: 400px;"></div> <!-- Placeholder for the graph -->
+        </div>
+        <div class="rdiv">
+        </div>
+    </div>
+    <div class="hey">
+        <div class="foot1">
+            <input type="number" name="prompt" class="inputra" placeholder="ENTER YOUR PROMPT" id="7">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
