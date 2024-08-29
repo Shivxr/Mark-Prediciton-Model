@@ -13,4 +13,4 @@ This is used for the determination of the predicted marks , which is very crucia
 
 Compared to Linear Regression and various Regression models,This model tends to be more accurate and needs lesser computation for the prediction.This performs very well with smaller data where other regression models struggle in computing lesser data based prediction.
 
-mark-predictor.netlify.app
+# mark-predictor.netlify.app
