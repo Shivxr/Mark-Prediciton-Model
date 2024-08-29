@@ -130,7 +130,7 @@ function displayResults() {
     ];
 
     let layout = {
-        title: 'Cutoff Progression',
+        title: 'Marks Progression',
         xaxis: {title: 'Exams'},
         yaxis: {title: 'Marks'},
         width: 600,
